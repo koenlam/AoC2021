@@ -2,4 +2,7 @@
 
 mkdir $1
 cd $1
-touch "day$1.py"
+# touch "day$1.py"
+cp ../template.py ./day$1.py
+touch test_input
+touch input
