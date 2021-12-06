@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+import numpy as np
 
 def read_file(filename):
     with open(filename) as f:
@@ -20,4 +21,4 @@ def part2(input_file):
 if __name__ == "__main__":
     part1("./test_input")
     print()
-    part2("./test_input")
+    # part2("./test_input")
