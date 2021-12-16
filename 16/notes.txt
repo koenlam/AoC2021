@@ -1,0 +1,21 @@
+Packet Header:
+    3 bits - Packet Version
+    3 bits - Type ID
+
+
+Type ID 4:
+    - Literal value
+    - single binary number
+    - Groups of bits
+        - Prefix 0 for last group otherwise prefix 1
+    - Group = Prefix bit + 4 bits
+
+
+Type ID other:
+    - Operator 
+        - Some calculation on sub-packets within
+    - Contains one or multiple packets
+    - Length type ID:
+        - After packet header
+        - If 0 -> next 15 bits = total length in bits of the sub-packets
+        - If 1 -> next 11 bits = number of sub-packets immediately contained
