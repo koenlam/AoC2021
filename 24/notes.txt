@@ -1,0 +1,182 @@
+inp w
+mul x 0
+add x z
+mod x 26
+div z 1
+add x 11
+eql x w
+eql x 0
+mul y 0
+add y 25
+mul y x
+add y 1
+mul z y
+mul y 0
+add y w
+add y 15
+mul y x
+add z y
+
+
+----------------
+w1 = get_input
+x = (z % 26) + 12
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) + 1
+z = z*y
+y = (w + 7) * x
+z = z + y
+
+----------------
+w2 = get_input
+x = (z % 26) + 11
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w + 15)*x
+z = z + y
+---------------
+w3 = get_input
+x = (z % 26) + 12
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+2)*x
+z = z + y
+-----------------
+w4 = get_input
+x = (z % 26) -3
+z = z / 26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+15)*x
+z = z + y
+------------------
+w5 = get_input
+x = (z % 26) + 10
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+14)*x
+z = z + y
+----------------
+w6 = get_input
+x = (z % 26) -9
+z = z / 26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+2)*x
+z = z + y
+----------------
+w7 = get_input
+x = (z % 26) + 10
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+15)*x
+z = z + y
+---------------
+w8 = get_input
+x = (z % 26) - 7 
+z = z / 26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+1)*x
+z = z + y
+----------------
+w9 = get_input
+x = (z % 26) - 11
+z = z / 26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+15)*x
+z = z + y
+-------------
+w10 = get_input
+x = (z % 26) - 4
+z = z / 26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+15)*x
+z = z + y
+-------------
+w11 = get_input
+x = (z % 26) +14
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+12)*x
+z = z + y
+-----------
+w12 = get_input
+x = (z % 26) + 11
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+2)*x
+z = z + y
+----------
+w13 = get_input
+x = (z % 26) -8
+z = z/26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+13)*x
+z = z + y
+-----------
+w14 = get_input
+x = (z % 26) - 10
+z = z/26
+if x == w:
+    x = 0
+else:
+    x = 1
+y = (25*x) +1
+z = z*y
+y = (w+13)*x
+z = z + y
